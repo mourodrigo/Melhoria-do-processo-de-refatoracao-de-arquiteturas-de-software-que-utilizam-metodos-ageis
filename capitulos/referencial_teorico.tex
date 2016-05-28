@@ -67,11 +67,17 @@ Os atributos são informações que compõe o objeto em si, sendo estas caracter
 
 \item \textit{Herança:} \cite{rumbaugh1991object} define a herança como a troca de informações entre classes desta maneira, uma classe pode ser projetada em seu primeiro momento de abstração em uma classe maior porém, graças a herança é possível definir diversas classes menores com herança de informações de uma classe maior (superclasse) e em seguida adicionar nesta as características exclusivas desta classe em si. 
 
-\item \textit{Generalização e Especialização:} 
+\item \textit{Generalização e Especialização:} Na definição de \cite{rumbaugh1991object} e \cite{booch2005unified} as generalizações são relacionamentos ou abstrações entre itens genéricos (superclasses) e específicos (subclasses). Enquanto as especializações são classes mais detalhadas que herdam características de classes gerais.
 
-Na definição de \cite{rumbaugh1991object} e \cite{booch2005unified} as generalizações são relacionamentos ou abstrações entre itens genéricos (superclasses) e específicos (subclasses). Enquanto as especializações são classes mais detalhadas que herdam características de classes gerais.
+\item \textit{Agregação:} A agregação é a maneira como determinados objetos são associados para que as classes possam representar o sistema como um todo, através dela é possível representar o ligações onde determinados objetos podem conter um ou mais objetos de outras classes como por exemplo, a asa é parte do avião ou o avião tem asas.
+
+\item \textit{Associação:} A associação é compreendida como um relacionamento entre objetos, no caso das associações é importante determinar a quantidade de objetos que pode ser ligados à outros objetos ou instancias uma determinada associação. O intervalo de inteiros que define o tamanho possível ou quantidade de relações é denominada multiplicidade do papel de uma associação, sendo esta expressa com um valor mínimo e máximo (podendo ser iguais), para a separação dos valores é usado o caractere ";". Seguindo este padrão o número de objetos pode ser representado como: um (1), zero ou um (0..1), muitos (0..*) e um ou mais (1..*) \cite{rumbaugh1991object}.
 
 
+\item \textit{Operações e métodos:}
+% to-do
+\item \textit{Encapsulamento:}
+% to-do
 
 
 
@@ -111,6 +117,20 @@ Dentro da própria comunidade de pessoas envolvidas em processos de desenvolvime
 \section{Documentação de arquitetura nos métodos ágeis}
 
 \section{Práticas que permitem melhorar a arquitetura nos métodos ágeis}
+
+Em \cite{babar2013agile}, Michael Stal (co-autor do livro) enfatiza a importância da refatoração sistemática do software na prevenção da erosão de arquitetura (situação decorrente da mudança de requisitos do sistema sem a evolução da arquitetura). De acordo com o autor, a refatoração sistemática da arquitetura  permite que o arquiteto de software previna a erosão através da avaliação do software existente antes da inclusão de novos componentes ou alteração dos componentes existentes. Também é recomendada uma abordagem de refatoração de arquitetura adaptável ao método ágil que consiste na identificação do problema, aplicação das técnicas adequadas de refatoração e testes da arquitetura resultante após as alterações desta maneira, a refatoração de arquitetura de software também é combinada com atividades de refatoração de código para a melhor agregação de valor, oferecendo melhores opções para os arquitetos de software na tomada de decisões. Nesta mesma publicação, John Grundy revela que diversos aspectos da arquitetura podem ser explorados utilizando \textit{spikes} (pequenos programas desenvolvidos no intuito de examinar uma possível solução para um requisito) facilitando o processo de refatoração.
+
+Para o efetivo funcionamento da arquitetura de software em conjunto dos métodos ágeis é importante realizar o trabalho arquitetural de maneira clara e sólida explicitando os objetivos das atividades à serem realizadas. O problema com a maioria das definições de requisitos à serem atendidos é a sua própria definição, sendo os autores de \cite{babar2013agile} apresentam três perguntas que ao serem respondidas são fundamentais nesta etapa:
+
+\begin{itemize}
+    \item \textit{Por que?} Por que o trabalho de arquitetura está sendo feito? Qual o seu propósito? Qual o benefício proposto?
+    \item \textit{Como?} Como este trabalho de arquitetura é realizado? Quais as atividades de arquitetura à serem ralizadas?
+    \item \textit{O que?} Quais os objetivos desta arquitetura? Quais os principais componentes?
+\end{itemize}
+
+Estas perguntas foram elaboradas pelos autores baseadas na sua vasta experiência e anos de observações em projetos comerciais e discussões com arquitetos especialistas da área, através delas é possível identificar com clareza os requisitos à serem atendidos e desta maneira, avaliar corretamente a prioridade e dificuldade de implementação de cada um destes requisitos..
+
+% to-do complementar mais praticas pg236 do livro
 
 \section{Refatoração de arquitetura}
 
@@ -166,6 +186,9 @@ Quando as implementação do sistema contendo dependências que não são viáve
 
 A refatoração de um componente não crítico de arquitetura não deve ser aplicado imediatamente após a data de release. Porém, se uma refatoração em especifico não é aplicada em uma iteração por algum motivo, está se torna um débito de design e precisa ser resolvida na próxima iteração, já artefatos de arquitetura que não foram verificados na sprint atual devem ser mantido no backlog para serem analisado em seguida.
 
+A refatoração contínua \cite{beck2000extreme} foca na resolução de problemas acima da análise, mesmo que as atividades de análise precedam as atividades de refatoração. Em um caso ideal, a refatoração é executada continuamente \cite{stamelos2007agile} pois, é mais fácil implementar uma série de pequenas mudanças durante o processo de desenvolvimento do que uma grande mudança. Porém, nem sempre é possível evitar grandes mudanças no processo \cite{lippert2006refactoring}. 
+
+
 \subsection{Principais obstáculos na refatoração de arquitetura}
 \begin{description}
 \item[Organização e gestão:] 
@@ -184,9 +207,6 @@ Devido à falta de ferramentas que suportem diretamente a engenharia de refatora
 \item[Aplicabilidade:]
 Se a erosão de design da arquitetura de software do projeto desenvolvido for grande ao ponto de que a refatoração resolverá apenas os sintomas e não as causas, e reengenharia ou até a reconstrução do projeto pode ser mais adequada e eficiente.
 \end{description}
-
-
-% - (o que é, quais as dificuldades e obstáculos, )
 
 \subsection{Refatoração versus reengenharia de arquitetura}
 
