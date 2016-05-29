@@ -55,7 +55,7 @@ O paradigma da orientação a objetos é um conceito que pode ser aplicado indep
 
 \begin{enumerate}
 % \item \textit{Comunicação entre os stakeholders.}
-\item \textit{Abstração:} É a visão geral de determinados componentes de um sistema com o objetivo de interligá-los à outros componentes, omitindo detalhes específicos, concentrando-se apenas em seu comportamento e interação no sistema como um todo. Segundo \cite{rumbaugh1991object} a abstraçào consiste na percepção dos aspectos fundamentais de uma entidade ou seja, antes de analisar sua implementação, concentrar-se no que o objeto faz e o que é. Através da abstração é possivel obter a liberdade de tomar decisões evitando influenciar em detalhes específicos do objeto antes de sua implementação.
+\item \textit{Abstração:} É a visão geral de determinados componentes de um sistema com o objetivo de interligá-los à outros componentes, omitindo detalhes específicos, concentrando-se apenas em seu comportamento e interação no sistema como um todo. Segundo \cite{rumbaugh1991object} a abstraçào consiste na percepção dos aspectos fundamentais de uma entidade ou seja, antes de analisar sua implementação, concentrar-se no que o objeto faz e o que é. Através da abstração é possível obter a liberdade de tomar decisões evitando influenciar em detalhes específicos do objeto antes de sua implementação. Os principais conceitos de abstração são apresentados à seguir:
 
 \item \textit{Atributos:} 
 Os atributos são informações que compõe o objeto em si, sendo estas características, propriedades estados ou qualidades de algo. As várias instâncias de um objeto podem variar os valores armazenados em cada um dos objetos porém, os nomes dos atribútos em cada uma das classes individualmente é único \cite{rumbaugh1991object}.
@@ -69,23 +69,21 @@ Os atributos são informações que compõe o objeto em si, sendo estas caracter
 
 \item \textit{Generalização e Especialização:} Na definição de \cite{rumbaugh1991object} e \cite{booch2005unified} as generalizações são relacionamentos ou abstrações entre itens genéricos (superclasses) e específicos (subclasses). Enquanto as especializações são classes mais detalhadas que herdam características de classes gerais.
 
-\item \textit{Agregação:} A agregação é a maneira como determinados objetos são associados para que as classes possam representar o sistema como um todo, através dela é possível representar o ligações onde determinados objetos podem conter um ou mais objetos de outras classes como por exemplo, a asa é parte do avião ou o avião tem asas.
+\item \textit{Agregação:} A agregação é a maneira como determinados objetos são associados para que as classes possam representar o sistema como um todo, através dela é possível representar o ligações onde determinados objetos podem conter um ou mais objetos de outras classes como por exemplo, a asa é parte do avião ou o avião tem asas \cite{rumbaugh1991object}.
 
 \item \textit{Associação:} A associação é compreendida como um relacionamento entre objetos, no caso das associações é importante determinar a quantidade de objetos que pode ser ligados à outros objetos ou instancias uma determinada associação. O intervalo de inteiros que define o tamanho possível ou quantidade de relações é denominada multiplicidade do papel de uma associação, sendo esta expressa com um valor mínimo e máximo (podendo ser iguais), para a separação dos valores é usado o caractere ";". Seguindo este padrão o número de objetos pode ser representado como: um (1), zero ou um (0..1), muitos (0..*) e um ou mais (1..*) \cite{rumbaugh1991object}.
 
 
 \item \textit{Operações e métodos:}
-% to-do
+Os métodos seguem lógicas semelhantes aos atributos do objeto porém estes são definidos como funções. Uma chamada à um método é similar à chamada de atributos porém com a adição de parenteses (dependendo da linguagem de programação) ao final do método, possivelmente com a passagem de argumentos \cite{rumbaugh1991object}.
+
+
 \item \textit{Encapsulamento:}
-% to-do
-
-
+O encapsulamento é uma técnica utilizada para ocultar o funcionamento interno do objeto perante os usuários deste mesmo objeto. O encapsulamento separa o funcionamento interno do objeto de seu funcionamento externo permitindo maior flexibilidade na mudança do comportamento de objeto e maior segudança conforme alterações de código são realizadas\cite{rumbaugh1991object}.
 
 \end{enumerate}
 
-\subsection{Conceitos }
 
-%TO-DO complementar
 
 \subsection{Modelo-visão-controlador}
 
@@ -175,6 +173,16 @@ Em \cite{babar2013agile}, o co-autor Uwe Friedrichsen apresenta a ideia de uma a
 
 \section{Documentação de arquitetura nos métodos ágeis}
 
+Segundo \cite{highsmith2001agile} a documentação em excesso pode se tornar um problema constante durante o planejamento do projeto e os envolvidos no desenvolvimento tem por sua experiência que a única documentação em que podem confiar é o próprio código. Desta maneira uma visão geral de arquitetura do sistema provê apenas uma abstração geral, podendo sendo inviável de ser utilizada pelos desenvolvedores.
+
+O próprio Manifesto Ágil \cite{manifestoagil} em seus princípios coloca a entrega de software funcional frente à elaboração de documentação do projeto, o que tem criado uma cultura eliminação total da utilização da documentação durante todo o ciclo de vida do software.
+
+Conforme \cite{bass2007software} afirmou, os requisitos de um sistema sofrem influência direta em seu design conforme os atributos de qualidade exigidos pelos \textit{stakeholders} sejam apresentados. Esta afirmação é confirmada em por outros autores complementam este posicionamento \cite{prause2012architectural}, relatando que os desenvolvedores podem não importar-se sobre a arquitetura ou ter pouca experiência no design da mesma, causando problemas na combinação de arquitetura e agilidade além de que a esta documentação pode ser custosa dentro do método ágil deviso à uma série de razões como tempo dedicado para o design detalhado durante as iterações, troca de informações relacionadas à arquitetura e o uso inapropriado de metáforas de design que pode resultar em um tempo e esforço adicional da equipe.
+
+
+Já \cite{cockburn2006agile} afirma que a questão relacionada aos métodos ágeis e arquitetura de software não está na utilização ou não do conceito de arquitetura de software e sim em qual o tamanho do esforço deve ser investido na arquitetura, assumindo que este esforço pode ser de grande valor para o cliente.
+
+
 \section{Práticas que permitem melhorar a arquitetura nos métodos ágeis}
 
 Em \cite{babar2013agile}, Michael Stal (co-autor do livro) enfatiza a importância da refatoração sistemática do software na prevenção da erosão de arquitetura (situação decorrente da mudança de requisitos do sistema sem a evolução da arquitetura). De acordo com o autor, a refatoração sistemática da arquitetura  permite que o arquiteto de software previna a erosão através da avaliação do software existente antes da inclusão de novos componentes ou alteração dos componentes existentes. Também é recomendada uma abordagem de refatoração de arquitetura adaptável ao método ágil que consiste na identificação do problema, aplicação das técnicas adequadas de refatoração e testes da arquitetura resultante após as alterações desta maneira, a refatoração de arquitetura de software também é combinada com atividades de refatoração de código para a melhor agregação de valor, oferecendo melhores opções para os arquitetos de software na tomada de decisões. Nesta mesma publicação, John Grundy revela que diversos aspectos da arquitetura podem ser explorados utilizando \textit{spikes} (pequenos programas desenvolvidos no intuito de examinar uma possível solução para um requisito) facilitando o processo de refatoração.
@@ -188,6 +196,8 @@ Para o efetivo funcionamento da arquitetura de software em conjunto dos métodos
 \end{itemize}
 
 Estas perguntas foram elaboradas pelos autores baseadas na sua vasta experiência e anos de observações em projetos comerciais e discussões com arquitetos especialistas da área, através delas é possível identificar com clareza os requisitos à serem atendidos e desta maneira, avaliar corretamente a prioridade e dificuldade de implementação de cada um destes requisitos.
+
+Entretanto, é possível concluir que o uso exclusivo da refatoração contínua não é suficiente para atender o nono princípio ágil "Contínua atenção à excelência técnica e bom design, aumenta a agilidade" \cite{beck2001manifesto}, e neste momento a arquitetura de software se faz necessária, expressando a importância do balanço entre as duas práticas.
 
 % to-do complementar mais praticas pg236 do livro
 
