@@ -110,6 +110,65 @@ Dentro da própria comunidade de pessoas envolvidas em processos de desenvolvime
 
 \section{Os métodos ágeis e a arquitetura de software}
 
+O desenvolvimento de software através de métodos ágeis permite que as soluções sejam entregues com maior velocidade portanto, segundo \cite{turk2014limitations} esta metodologia utiliza algumas práticas de gestão que são ajustáveis e adaptativas no contexto de:
+    \begin{itemize}
+        \item Mudanças provenientes de experiências adquiridas no processo de desenvolvimento.
+        \item Mudanças nos requisitos do sistema.
+        \item Mudanças no ambiente de desenvolvimento.
+    \end{itemize}
+
+Os autores apontam o ágil como um suporte para a rápida entrega de código desenvolvido e operacional através da estruturação do processo de desenvolvimento em iterações, onde cada iteração foca na entrega de código utilizável. Desde modo, apenas entregas de códigos realmente importam e as tarefas de analise e design além da documentação da arquitetura vem sendo praticamente eliminadas ou negligenciadas \cite{waterman2015much}, o que pode causar uma perda de documentação e históricos de mudanças e processos passados devido à própria falta de documentação, sendo este um fator primordial na criação e evolução de um sistema complexo.
+
+Segundo o manifesto ágil \cite{manifestoagil} firmado em 2011 por 17 agilistas de metodologias e processos, existem 12 princípios que podem ser utilizados por equipes para implementação e execução de projetos com agilidade:
+
+\begin{enumerate}
+    \item Nossa maior prioridade é satisfazer o cliente, através da entrega adiantada e contínua de software de valor.
+    \item Aceitar mudanças de requisitos, mesmo no fim do desenvolvimento. Processos ágeis se adequam a mudanças, para que o cliente possa tirar vantagens competitivas.
+    \item Entregar software funcionando com freqüencia, na escala de semanas até meses, com preferência aos períodos mais curtos.
+    \item Pessoas relacionadas à negócios e desenvolvedores devem trabalhar em conjunto e diáriamente, durante todo o curso do projeto.
+    \item Construir projetos ao redor de indivíduos motivados. Dando a eles o ambiente e suporte necessário, e confiar que farão seu trabalho.
+    \item O Método mais eficiente e eficaz de transmitir informações para, e por dentro de um time de desenvolvimento, é através de uma conversa cara a cara.
+    \item Software funcional é a medida primária de progresso.
+    \item Processos ágeis promovem um ambiente sustentável. Os patrocinadores, desenvolvedores e usuários, devem ser capazes de manter indefinidamente, passos constantes.
+    \item Contínua atenção à excelência técnica e bom design, aumenta a agilidade.
+    \item Simplicidade: a arte de maximizar a quantidade de trabalho que não precisou ser feito.
+    \item As melhores arquiteturas, requisitos e designs emergem de times auto-organizáveis.
+    \item Em intervalos regulares, o time reflete em como ficar mais efetivo, então, se ajustam e otimizam seu comportamento de acordo.
+
+\end{enumerate}
+
+
+
+No estudo conduzido por \cite{waterman2015much} foram apontadas observações à respeito dos princípios do manifesto ágil, estas observações são descritas abaixo:
+
+\begin{itemize}
+    \item A necessidade de um canal de comunicação direto ou da presença frente à frente dos desenvolvedores e \textit{stakeholders} exige 
+    a alocação constante de pessoas à lugares próximos ou disponibilidade integral dos próprios \textit{stakeholders} para resolução de dúvidas relacionadas aos requisitos do projeto.
+    
+    \item A documentação e modelagens de software não são papeis centrais no desenvolvimento de software.
+    
+    \item Os requisitos de software e o ambiente de desenvolvimento do software só terá sua evolução no momento em que este for desenvolvido.
+    
+    \item O processo de desenvolvimento é projetado para mudanças nos requisitos do software sendo este voltado para a rápida entrega e não para a produção de produtos de alta qualidade.
+    
+    \item Os desenvolvedores requerem a habilidade para solucionar todos os requisitos necessários de maneira apropriada ou seja, a organização deverá formar equipes consistindo de profissionais com alto nível de experiência na resolução de problemas neste processo enquanto estão trabalhando na execução do mesmo.
+    
+    \item A visibilidade do projeto é alcançada através da entrega de pequenos incrementos no projeto com poucas métricas.
+    
+    \item Avaliação dos artefatos (produto e processo) do software são restritas à avaliações informais e testes de código.
+    
+    \item A reusabilidade do código não é um objetivo de aplicações desenvolvidas.
+    
+    \item O custo das mudanças não poderia sofrer alterações ao longo do tempo.
+    
+    \item Alguns softwares pode ser desenvolvido em pequenas partes incrementais.
+    
+    \item Não há necessidade de projetar as mudanças de requisitos solicitadas pois elas são lidadas efetivamente na própria refatoração do código.
+    
+\end{itemize}
+
+Em \cite{babar2013agile}, o co-autor Uwe Friedrichsen apresenta a ideia de uma arquitetura evolutiva como sendo o resultado de uma constante refatoração do sistema baseado em um conjunto de princípios de arquitetura bem definidos, destacando a importância da arquitetura evolutiva em seus pontos chave. Concluindo desta maneira que uma prática hibrida entre arquitetura explícita e emergente é a melhor abordagem, sendo mais próxima do praticável.
+
 %  Valores e princípios dos métodos ágeis versus Métodos ágeis Scrum e XP  versus Arquitetura de software
 
 % enfatizar arquitetura não é valor percebido pelo cliente
@@ -128,7 +187,7 @@ Para o efetivo funcionamento da arquitetura de software em conjunto dos métodos
     \item \textit{O que?} Quais os objetivos desta arquitetura? Quais os principais componentes?
 \end{itemize}
 
-Estas perguntas foram elaboradas pelos autores baseadas na sua vasta experiência e anos de observações em projetos comerciais e discussões com arquitetos especialistas da área, através delas é possível identificar com clareza os requisitos à serem atendidos e desta maneira, avaliar corretamente a prioridade e dificuldade de implementação de cada um destes requisitos..
+Estas perguntas foram elaboradas pelos autores baseadas na sua vasta experiência e anos de observações em projetos comerciais e discussões com arquitetos especialistas da área, através delas é possível identificar com clareza os requisitos à serem atendidos e desta maneira, avaliar corretamente a prioridade e dificuldade de implementação de cada um destes requisitos.
 
 % to-do complementar mais praticas pg236 do livro
 
@@ -208,7 +267,21 @@ Devido à falta de ferramentas que suportem diretamente a engenharia de refatora
 Se a erosão de design da arquitetura de software do projeto desenvolvido for grande ao ponto de que a refatoração resolverá apenas os sintomas e não as causas, e reengenharia ou até a reconstrução do projeto pode ser mais adequada e eficiente.
 \end{description}
 
-\subsection{Refatoração versus reengenharia de arquitetura}
+Em \cite{babar2013agile} o processo de refatoração é considerado um auxiliador na grande maioria de problemas estruturais de sistemas onde também são apontados refatorações são viável contanto que o design em alto nível de abstração seja bom o suficiente para limitar a refatoração à situações de larga escala \cite{ihme2005agile}, \cite{kruchten2008situated} e \cite{boehm2002get}.
+
+\subsection{Refatoração versus refatoração de arquitetura}
+
+Em \cite{thapparambil2005agile} o autor expressa que a "\textit{a refatoração é o método primário no desenvolvimento de arquitetura no mundo ágil}" porém é importante apresentar a diferença entre \textbf{refatoração de código} e \textbf{refatoração de arquitetura}.
+
+Na publicação de \cite{codevsarefactor} são apresentadas as diferenças abaixo definindo cada um dos termos:
+
+\begin{itemize}
+    \item \textit{Refatoração de código:} visa modificar o código sem alterar o comportamento do artefato em conjunto com o escopo geral, melhorando apenas a qualidade do software. Uma refatoração de código é compreendida com uma pequena tarefa onde uma serie de pequenas mudanças é aplicada para melhorar as qualidades do código (ex: usabilidade, leitura e modificabilidade).
+    \item \textit{Refatoração de arquitetura:} tem como objetivo reorganizar o código existente em novas novas camadas lógicas podendo alterar o escopo principal do projeto visando remover problemas e impedimentos na arquitetura atual e melhorando atributos de qualidade como: escalabilidade, extensibilidade, capacidade de evolução, testabilidade e robustez. 
+\end{itemize}
+
+Nem todas refatorações (principalmente as de código) são percebidas pelos usuários do sistema pois refatorações porem vir à ser completamente transparentes para seus usuários, agregando valores de qualidade apenas para os envolvidos no desenvolvimento do projeto.
+
 
 \section{Trabalhos relacionados}
 
