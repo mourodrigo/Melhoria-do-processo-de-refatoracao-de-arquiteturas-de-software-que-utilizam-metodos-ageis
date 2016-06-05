@@ -4,9 +4,9 @@ Neste capítulo serão apresentados os principais conceitos e as relações que 
 %AS - O que é
 O conceito de Arquitetura de Software surgiu em resposta ao aumento da complexidade dos sistemas de software existentes, este vem sendo agregado por de segmentos como: redes, servidores, bancos de dados, interfaces de usuário, dependências de requisitos, atributos de qualidade de software, atributos de segurança, redundância, replicação e escalabilidade \cite{hanschke2015integrating}.
 
-\cite{bass2007software} apresenta a arquitetura de software como sendo um resultado de um conjunto de decisões de negócio aliadas à decisões técnicas, sendo que este resultado é diretamente influenciado pelo ambiente em que a arquitetura está sendo projetada para ser executada. O autor também afirma que a arquitetura é diretamente influenciada pelos \textit{stakeholders} (proprietário, cliente, desenvolvedor, gestor de projeto, tomadores de decisão do produto entre outros) envolvidos no projeto e interessados na construção do mesmo, diferentes \textit{stakeholders} podem exigir determinados requisitos como: baixo custo de desenvolvimento, grande variedade de funcionalidades, fácil customização, otimização para determinados hardwares. É compreensível que um sistema com o mínimo de requisitos de qualidade (performance, disponibilidade, compatibilidade, uso de recursos e usabilidade para o usuário) deva atender a todos os requisitos de qualidade impostos inclusive pelos \textit{stakeholders} mas, esta será uma árdua tarefa à ser balanceada pelo arquiteto de software no momento do design.
+\cite{bass2007software} apresenta a arquitetura de software como sendo um resultado de um conjunto de decisões de negócio aliadas à decisões técnicas, sendo que este resultado é diretamente influenciado pelo ambiente em que a arquitetura está sendo projetada para ser executada. O autor também afirma que a arquitetura é diretamente influenciada pelos \textit{stakeholders} (proprietário, cliente, desenvolvedor, gestor de projeto, tomadores de decisão do produto entre outros envolvidos no projeto e interessados na construção do mesmo), diferentes \textit{stakeholders} podem exigir determinados requisitos como: baixo custo de desenvolvimento, grande variedade de funcionalidades, fácil customização, otimização para determinados hardwares. É compreensível que um sistema com o mínimo de requisitos de qualidade (performance, disponibilidade, compatibilidade, uso de recursos e usabilidade para o usuário) deva atender a todos os requisitos de qualidade impostos inclusive pelos \textit{stakeholders} mas, esta será uma árdua tarefa à ser balanceada pelo arquiteto de software no momento do design.
 
-\cite{babar2014making} define a arquitetura de software como:
+Segundo \cite{babar2014making} a arquitetura de software é definida como:
 \begin{itemize}
 \item Um conjunto de elementos arquiteturais (ex: informações, processamentos, conexões entre requisitos, modelagens de dados e processos).
 \item A forma como estes elementos agem como princípios para guiar  o relacionamento entre elementos e suas propriedades.
@@ -14,11 +14,11 @@ O conceito de Arquitetura de Software surgiu em resposta ao aumento da complexid
 \end{itemize}  
 
 %AS - Por que é importante?%
-A antecipação da arquitetura de software de sistemas pode trazer uma série de vantagens \cite{babar2013agile}, sistemas complexos tipicamente possuem arquiteturas complexas e quando estas forem compostas por partes originadas de sistemas de terceiros podem gerar a necessidade de ajustes e adequações. 
+A antecipação da arquitetura de software de sistemas pode trazer uma série de vantagens \cite{babar2013agile}. Sistemas complexos tipicamente possuem arquiteturas complexas e quando estas forem compostas por partes originadas de sistemas de terceiros podem gerar a necessidade de ajustes e adequações. 
 
 As tendências recentes na descrição da arquitetura de software como um conjunto de decisões de design com diagnóstico das próprias decisões tem destacado a importância da análise racional na realização e descrição das decisões de design tomadas. \cite{babar2009software}
 
-Segundo \cite{hanschke2015integrating}, é importante considerar a realização da documentação do projeto compreendendo os elementos no design de soluções de software efetivas. Este processo compõe definir arquitetura em diversas perspectivas e níveis de abstração, ponderando sobre todas as várias propriedades da arquitetura, assegurando que esta seja concebível com um conjunto de implementações que irão atender os requisitos do sistema, evoluindo e integrando arquiteturas complexas. A realização da arquitetura de software no processo e ciclo de vida de desenvolvimento de software é considerada a etapa mais desafiadora à ser definida pois é considerada como uma solução traduzida em sistema que deve ser projetada antecipadamente da fase de projeto. 
+Segundo \cite{hanschke2015integrating}, é importante considerar a realização da documentação do projeto compreendendo os elementos no design de soluções de software efetivas. Este processo compõe definir arquitetura em diversas perspectivas e níveis de abstração, ponderando sobre todas as várias propriedades da arquitetura, assegurando que esta seja concebível com um conjunto de implementações que irão atender os requisitos do sistema, evoluindo e integrando arquiteturas complexas. A realização da arquitetura de software no processo e ciclo de vida de desenvolvimento de software é considerada uma etapa desafiadora à ser definida, pois é considerada como uma solução traduzida em sistema que deve ser projetada antecipadamente da fase de projeto. 
 
 Considerando a arquitetura de software no contexto do ambiente corporativo, existem três razões fundamentais onde pode ser observada a sua importância \cite{bass2007software}:
 
@@ -30,7 +30,7 @@ Considerando a arquitetura de software no contexto do ambiente corporativo, exis
 \end{enumerate}
 %AS -  dependência em relação aos requisitos 
 
-\cite{babar2013agile} Para compreender e validar um conjunto de requisitos pode ser necessário o uso da modelagem com a compreensão de uma série de soluções de arquitetura sendo que muitas delas podem ser inviáveis devido à determinadas restrições de requisitos. 
+Para compreender e validar um conjunto de requisitos pode ser necessário o uso da modelagem com a compreensão de uma série de soluções de arquitetura sendo que muitas delas podem ser inviáveis devido à determinadas restrições de requisitos \cite{babar2013agile}. 
 
 \cite{hanschke2015integrating} afirmaram que uma série de esforços já foram realizados aprimorando processos para suportar o design da arquitetura de sistemas complexas, modelagem, refinação e conexão arquitetural de elementos em design detalhado das implementações.  Em relação ao processo, é necessário identificar e capturar os requisitos funcionais e não funcionais do projeto e então realizar a tentativa de definir uma arquitetura que cumpra estes requisitos.
 
@@ -47,9 +47,83 @@ Um fator crítico na antecipação da arquitetura é o potencial de excesso de p
 \cite{beck2001manifesto} também revela que um erro crítico é a impossibilidade de adaptar-se ao grande número de mudanças ou re-priorização de requisitos que podem vir à ocorrer com o aumento da experiência dos usuários após a utilização do sistema. A antecipação de design de arquitetura implica na manutenção de alguns requisito gerais, funcionais e não funcionais, para que permaneçam consistentes ao longo de todo o ciclo de vida do projeto para que o relacionamento entre requisitos e arquitetura deve torne-se uma única evolução. 
 
 
-\subsection{Orientação à objetos}
 
-Na concepção da orientação à objetos, Alan Kay imaginou objetos como recursões do conceito de um computador, sendo cada um desdes objetos responsável pela correta realização de pequenas tarefas próprias sendo este sistema passível de uma melhor compreensão após ser observado em maior escala, funcionando em conjunto com diversos outros objetos integralmente \cite{reenskaug2009dci}. O autor afirma que a Orientação à Objetos é altamente distribuída, sendo de fato um paradigma complexo de delinear em situações em que ocorrem concorrência e paralelismo.
+\section{O método ágil}
+
+O desenvolvimento de software através de métodos ágeis permite que as soluções sejam entregues com maior velocidade portanto, segundo \cite{turk2014limitations} esta metodologia utiliza algumas práticas de gestão que são ajustáveis e adaptativas no contexto de:
+    \begin{itemize}
+        \item Mudanças provenientes de experiências adquiridas no processo de desenvolvimento.
+        \item Mudanças nos requisitos do sistema.
+        \item Mudanças no ambiente de desenvolvimento.
+    \end{itemize}
+
+Os autores apontam o ágil como um suporte para a rápida entrega de código desenvolvido e operacional através da estruturação do processo de desenvolvimento em iterações, onde cada iteração foca na entrega de código utilizável. Desde modo, apenas entregas de códigos realmente importam e as tarefas de analise e design além da documentação da arquitetura vem sendo praticamente eliminadas ou negligenciadas \cite{waterman2015much}, o que pode causar uma perda de documentação e históricos de mudanças e processos passados devido à própria falta de documentação, sendo este um fator primordial na criação e evolução de um sistema complexo.
+
+\subsection{O manifesto ágil}
+
+Segundo o manifesto ágil \cite{manifestoagil} firmado em 2011, existem 12 princípios que podem ser utilizados por equipes para implementação e execução de projetos com agilidade:
+
+\begin{enumerate}
+    \item Nossa maior prioridade é satisfazer o cliente, através da entrega adiantada e contínua de software de valor.
+    \item Aceitar mudanças de requisitos, mesmo no fim do desenvolvimento. Processos ágeis se adequam a mudanças, para que o cliente possa tirar vantagens competitivas.
+    \item Entregar software funcionando com freqüencia, na escala de semanas até meses, com preferência aos períodos mais curtos.
+    \item Pessoas relacionadas à negócios e desenvolvedores devem trabalhar em conjunto e diáriamente, durante todo o curso do projeto.
+    \item Construir projetos ao redor de indivíduos motivados. Dando a eles o ambiente e suporte necessário, e confiar que farão seu trabalho.
+    \item O Método mais eficiente e eficaz de transmitir informações para, e por dentro de um time de desenvolvimento, é através de uma conversa cara a cara.
+    \item Software funcional é a medida primária de progresso.
+    \item Processos ágeis promovem um ambiente sustentável. Os patrocinadores, desenvolvedores e usuários, devem ser capazes de manter indefinidamente, passos constantes.
+    \item Contínua atenção à excelência técnica e bom design, aumenta a agilidade.
+    \item Simplicidade: a arte de maximizar a quantidade de trabalho que não precisou ser feito.
+    \item As melhores arquiteturas, requisitos e designs emergem de times auto-organizáveis.
+    \item Em intervalos regulares, o time reflete em como ficar mais efetivo, então, se ajustam e otimizam seu comportamento de acordo.
+
+\end{enumerate}
+
+No estudo conduzido por \cite{waterman2015much} foram apontadas observações à respeito dos princípios do manifesto ágil, estas observações são descritas abaixo:
+
+\begin{itemize}
+    \item A necessidade de um canal de comunicação direto ou da presença frente à frente dos desenvolvedores e \textit{stakeholders} exige 
+    a alocação constante de pessoas à lugares próximos ou disponibilidade integral dos próprios \textit{stakeholders} para resolução de dúvidas relacionadas aos requisitos do projeto.
+    
+    \item A documentação e modelagens de software não são papéis centrais no desenvolvimento de software.
+    
+    \item Os requisitos de software e o ambiente de desenvolvimento do software só terá sua evolução no momento em que este for desenvolvido.
+    
+    \item O processo de desenvolvimento é projetado para mudanças nos requisitos do software sendo este voltado para a rápida entrega e não para a produção de produtos de alta qualidade.
+    
+    \item Os desenvolvedores requerem a habilidade para solucionar todos os requisitos necessários de maneira apropriada ou seja, a organização deverá formar equipes consistindo de profissionais com alto nível de experiência na resolução de problemas neste processo enquanto estão trabalhando na execução do mesmo.
+    
+    \item A visibilidade do projeto é alcançada através da entrega de pequenos incrementos no projeto com poucas métricas.
+    
+    \item Avaliação dos artefatos (produto e processo) do software são restritas à avaliações informais e testes de código.
+    
+    \item A reusabilidade do código não é um objetivo de aplicações desenvolvidas.
+    
+    \item O custo das mudanças não poderia sofrer alterações ao longo do tempo.
+    
+    \item Alguns softwares pode ser desenvolvido em pequenas partes incrementais.
+    
+    \item Não há necessidade de projetar as mudanças de requisitos solicitadas pois elas são lidadas efetivamente na própria refatoração do código.
+    
+\end{itemize}
+
+\subsection{Scrum}
+% to-do verificar referencia da versionone
+Conforme pesquisa realizada em \cite{versionone2016} os métodos ágeis mais utilizados atualmente são Scrum (58\%) e XP(10\%), podendo ser considerado um total de cerca de 70\% de empresas que utilizam estas técnicas ou então uma fusão de ambas simultaneamente.
+
+Scrum é um dos métodos mais utilizados para gerenciamento de projetos de software que utiliza iterações e incrementos no projeto realizando inspeções e adaptações na própria metodologia \cite{babar2013agile}. Projetos baseados em Scrum tem suas iterações divididas em tempos curtos que geralmente variam entre 2 e 4 semanas, cada iteração é iniciada por um planejamento onde cada requisito (em forma de história) é buscada do \textit{backlog} (é a negociação de requisitos com o cliente que se torna a base para o desenvolvimento durante a sprint, sendo utilizada para a futura documentação) onde em seguida é desenvolvida e terminada até o fim da iteração. Estas iterações também são conhecidas como \textit{sprints} e o seu planejamento deve ser realizado em poucas horas. No momento do planejamento é esperado que todos os \textit{stakeholders} estejam presentes assim como no encontro de revisão da sprint, ao final da realização.
+
+No Scrum o repositório onde todos os requisitos aguardam execução conforme sua prioridade (\textit{backlog}) é fundamental para implementação da metodologia. Tanto a metodologia ágil quanto a arquitetura de software utilizam o conceito de backlogs para armazenar os futuros requisitos à serem atendidos \cite{hofmeister2007general}. Na metodologia ágil e principalmente Scrum são utilizados gráficos \textit{burn-down} para avaliação do status da sprint que está sendo realizada.
+
+Em \cite{babar2013agile} é apresentada a ideia de uma arquitetura evolutiva como sendo o resultado de uma constante refatoração do sistema baseado em um conjunto de princípios de arquitetura bem definidos, destacando a importância da arquitetura evolutiva em seus pontos chave. Concluindo desta maneira que uma prática hibrida entre arquitetura explícita e emergente é a melhor abordagem, sendo mais próxima do praticável.
+
+%  Valores e princípios dos métodos ágeis versus Métodos ágeis Scrum e XP  versus Arquitetura de software
+
+% to-do enfatizar arquitetura não é valor percebido pelo cliente
+
+\section{Documentação de arquitetura nos métodos ágeis}
+
+Um padrão comumente utilizado amplamente na arquitetura de software e nos métodos ágeis é a orientação à objetos. Na concepção da orientação à objetos, imaginou-se objetos como recursões do conceito de um computador, sendo cada um desdes objetos responsável pela correta realização de pequenas tarefas próprias sendo este sistema passível de uma melhor compreensão após ser observado em maior escala, funcionando em conjunto com diversos outros objetos integralmente \cite{reenskaug2009dci}. O autor afirma que a Orientação à Objetos é altamente distribuída, sendo de fato um paradigma complexo de delinear em situações em que ocorrem concorrência e paralelismo.
 
 O paradigma da orientação a objetos é um conceito que pode ser aplicado independente da linguagem de programação utilizada \cite{rumbaugh1991object}. O desenvolvimento de softwares utilizando a orientação à baseado em objetos é uma prática recomendada por senso comum entre a comunidade de desenvolvedores. Dentro deste paradigma são apresentados alguns conceitos que compõem a própria orientação à objetos:
 
@@ -83,95 +157,8 @@ O encapsulamento é uma técnica utilizada para ocultar o funcionamento interno 
 
 \end{enumerate}
 
-
-
-\subsection{Modelo-visão-controlador}
-
-%TO-DO
-
-\section{Arquitetura de software com métodos ágeis}
-
-% surgimento
-
-Com o decorrer do tempo a comunidade de desenvolvimento de software iniciou uma reação buscando suprir a necessidade de respostas mais rápidas aos stakeholders, sendo mais ativo no desenvolvimento de funcionalidades das quais o usuário realmente percebe propostas de valor e após o surgimento dos métodos ágeis os arquitetos de software questionaram-se sobre o como estes métodos se encaixariam nas práticas de arquitetura de software. \cite{babar2013agile} ressalta que a inflexibilidade dos métodos normais tem um propósito. Obter um planejamento antecipado permite uma ótima predição do projeto desde que os requisitos não mudem com frequência, além de facilitar a coordenação de um grande número de times de desenvolvimento.
-
-% distancia arquitetura e ágil
-
-Segundo \cite{abrahamsson2010agility} o distanciamento entre os métodos ágeis e a arquitetura de software refere-se ao grande tempo desprendido na antecipação de problemas relacionados à arquitetura, enquanto os métodos ágeis procuram ser adaptativos, tomando decisões conforme a percepção de mudança de requisitos. 
-
-Na literatura, vários estudos apontam problemas relacionados a evolução do projeto de software e dificuldades com a arquitetura. \cite{waterman2015much} aponta que negligências de atividades de arquitetura podem acontecer dependendo dos valores buscados na entrega e que podem ser diretamente influenciados pelo tempo e orçamento do projeto. \cite{martini2015investigating} e \cite{bellomo2013study} afirmam que as limitações de tempo e orçamento podem resultar na tomada de decisões rápidas visando a entrega de funcionalidades, o que afeta diretamente o tempo dedicado ao planejamento e desenvolvimento de uma arquitetura adequada.
-
-Um arquiteto de software que projeta uma arquitetura de sistema com datas reais de entrega e prazos apertados irá tomar um determinado conjunto de decisões porém, o mesmo arquiteto ao projetar um sistema similar onde as datas de entrega e prazos podem ser facilmente atendidas, certamente tomará decisões diferentes. Da mesma maneira criar um design de arquitetura com os mesmos requisitos de hardware, recursos e interfaces atuais não tem o mesmo impacto que desenvolver uma arquitetura para um sistema que será entregue e executada daqui a 5 anos \cite{bass2007software}.
-
-Dentro da própria comunidade de pessoas envolvidas em processos de desenvolvimento e design de softwares existem lados rigorosamente definidos  uma incompatibilidade entre a agilidade e arquitetura. Neste contexto é necessário refletir sobre as seguintes perguntas: Quanto de arquitetura eu devo desenvolver versus quanto eu devo flexibilizar durante o projeto? Como e quando eu devo refatorar projetos? Quanto de arquitetura eu devo formalizar em documentos? Devo revisar minha arquitetura? Se sim, quando?
-\cite{babar2013agile}
-
-\section{Os métodos ágeis e a arquitetura de software}
-
-O desenvolvimento de software através de métodos ágeis permite que as soluções sejam entregues com maior velocidade portanto, segundo \cite{turk2014limitations} esta metodologia utiliza algumas práticas de gestão que são ajustáveis e adaptativas no contexto de:
-    \begin{itemize}
-        \item Mudanças provenientes de experiências adquiridas no processo de desenvolvimento.
-        \item Mudanças nos requisitos do sistema.
-        \item Mudanças no ambiente de desenvolvimento.
-    \end{itemize}
-
-Os autores apontam o ágil como um suporte para a rápida entrega de código desenvolvido e operacional através da estruturação do processo de desenvolvimento em iterações, onde cada iteração foca na entrega de código utilizável. Desde modo, apenas entregas de códigos realmente importam e as tarefas de analise e design além da documentação da arquitetura vem sendo praticamente eliminadas ou negligenciadas \cite{waterman2015much}, o que pode causar uma perda de documentação e históricos de mudanças e processos passados devido à própria falta de documentação, sendo este um fator primordial na criação e evolução de um sistema complexo.
-
-Segundo o manifesto ágil \cite{manifestoagil} firmado em 2011 por 17 agilistas de metodologias e processos, existem 12 princípios que podem ser utilizados por equipes para implementação e execução de projetos com agilidade:
-
-\begin{enumerate}
-    \item Nossa maior prioridade é satisfazer o cliente, através da entrega adiantada e contínua de software de valor.
-    \item Aceitar mudanças de requisitos, mesmo no fim do desenvolvimento. Processos ágeis se adequam a mudanças, para que o cliente possa tirar vantagens competitivas.
-    \item Entregar software funcionando com freqüencia, na escala de semanas até meses, com preferência aos períodos mais curtos.
-    \item Pessoas relacionadas à negócios e desenvolvedores devem trabalhar em conjunto e diáriamente, durante todo o curso do projeto.
-    \item Construir projetos ao redor de indivíduos motivados. Dando a eles o ambiente e suporte necessário, e confiar que farão seu trabalho.
-    \item O Método mais eficiente e eficaz de transmitir informações para, e por dentro de um time de desenvolvimento, é através de uma conversa cara a cara.
-    \item Software funcional é a medida primária de progresso.
-    \item Processos ágeis promovem um ambiente sustentável. Os patrocinadores, desenvolvedores e usuários, devem ser capazes de manter indefinidamente, passos constantes.
-    \item Contínua atenção à excelência técnica e bom design, aumenta a agilidade.
-    \item Simplicidade: a arte de maximizar a quantidade de trabalho que não precisou ser feito.
-    \item As melhores arquiteturas, requisitos e designs emergem de times auto-organizáveis.
-    \item Em intervalos regulares, o time reflete em como ficar mais efetivo, então, se ajustam e otimizam seu comportamento de acordo.
-
-\end{enumerate}
-
-
-
-No estudo conduzido por \cite{waterman2015much} foram apontadas observações à respeito dos princípios do manifesto ágil, estas observações são descritas abaixo:
-
-\begin{itemize}
-    \item A necessidade de um canal de comunicação direto ou da presença frente à frente dos desenvolvedores e \textit{stakeholders} exige 
-    a alocação constante de pessoas à lugares próximos ou disponibilidade integral dos próprios \textit{stakeholders} para resolução de dúvidas relacionadas aos requisitos do projeto.
-    
-    \item A documentação e modelagens de software não são papeis centrais no desenvolvimento de software.
-    
-    \item Os requisitos de software e o ambiente de desenvolvimento do software só terá sua evolução no momento em que este for desenvolvido.
-    
-    \item O processo de desenvolvimento é projetado para mudanças nos requisitos do software sendo este voltado para a rápida entrega e não para a produção de produtos de alta qualidade.
-    
-    \item Os desenvolvedores requerem a habilidade para solucionar todos os requisitos necessários de maneira apropriada ou seja, a organização deverá formar equipes consistindo de profissionais com alto nível de experiência na resolução de problemas neste processo enquanto estão trabalhando na execução do mesmo.
-    
-    \item A visibilidade do projeto é alcançada através da entrega de pequenos incrementos no projeto com poucas métricas.
-    
-    \item Avaliação dos artefatos (produto e processo) do software são restritas à avaliações informais e testes de código.
-    
-    \item A reusabilidade do código não é um objetivo de aplicações desenvolvidas.
-    
-    \item O custo das mudanças não poderia sofrer alterações ao longo do tempo.
-    
-    \item Alguns softwares pode ser desenvolvido em pequenas partes incrementais.
-    
-    \item Não há necessidade de projetar as mudanças de requisitos solicitadas pois elas são lidadas efetivamente na própria refatoração do código.
-    
-\end{itemize}
-
-Em \cite{babar2013agile}, o co-autor Uwe Friedrichsen apresenta a ideia de uma arquitetura evolutiva como sendo o resultado de uma constante refatoração do sistema baseado em um conjunto de princípios de arquitetura bem definidos, destacando a importância da arquitetura evolutiva em seus pontos chave. Concluindo desta maneira que uma prática hibrida entre arquitetura explícita e emergente é a melhor abordagem, sendo mais próxima do praticável.
-
-%  Valores e princípios dos métodos ágeis versus Métodos ágeis Scrum e XP  versus Arquitetura de software
-
-% enfatizar arquitetura não é valor percebido pelo cliente
-
-\section{Documentação de arquitetura nos métodos ágeis}
+Estes conceitos são utilizados amplamente no design de aplicações durante o processo de arquitetura, na troca de informações da metodologia ágil por meio da \textit{UML} (Unified Modeling Language) e na sua implementação em si.  
+%to-do descrever os diagramas mais utilizados no UML aqui
 
 Segundo \cite{highsmith2001agile} a documentação em excesso pode se tornar um problema constante durante o planejamento do projeto e os envolvidos no desenvolvimento tem por sua experiência que a única documentação em que podem confiar é o próprio código. Desta maneira uma visão geral de arquitetura do sistema provê apenas uma abstração geral, podendo sendo inviável de ser utilizada pelos desenvolvedores.
 
@@ -179,13 +166,33 @@ O próprio Manifesto Ágil \cite{manifestoagil} em seus princípios coloca a ent
 
 Conforme \cite{bass2007software} afirmou, os requisitos de um sistema sofrem influência direta em seu design conforme os atributos de qualidade exigidos pelos \textit{stakeholders} sejam apresentados. Esta afirmação é confirmada em por outros autores complementam este posicionamento \cite{prause2012architectural}, relatando que os desenvolvedores podem não importar-se sobre a arquitetura ou ter pouca experiência no design da mesma, causando problemas na combinação de arquitetura e agilidade além de que a esta documentação pode ser custosa dentro do método ágil deviso à uma série de razões como tempo dedicado para o design detalhado durante as iterações, troca de informações relacionadas à arquitetura e o uso inapropriado de metáforas de design que pode resultar em um tempo e esforço adicional da equipe.
 
-
 Já \cite{cockburn2006agile} afirma que a questão relacionada aos métodos ágeis e arquitetura de software não está na utilização ou não do conceito de arquitetura de software e sim em qual o tamanho do esforço deve ser investido na arquitetura, assumindo que este esforço pode ser de grande valor para o cliente.
 
+\section{Arquitetura de software com métodos ágeis}
+
+% surgimento
+
+Com o decorrer do tempo a comunidade de desenvolvimento de software iniciou uma reação buscando suprir a necessidade de respostas mais rápidas aos \textit{stakeholders}, sendo mais ativo no desenvolvimento de funcionalidades das quais o usuário realmente percebe propostas de valor e após o surgimento dos métodos ágeis os arquitetos de software questionaram-se sobre o como estes métodos se encaixariam nas práticas de arquitetura de software. \cite{babar2013agile} ressalta que a inflexibilidade dos métodos normais tem um propósito. Obter um planejamento antecipado permite uma ótima predição do projeto desde que os requisitos não mudem com frequência, além de facilitar a coordenação de um grande número de times de desenvolvimento.
+
+% distancia arquitetura e ágil
+
+Segundo \cite{abrahamsson2010agility} o distanciamento entre os métodos ágeis e a arquitetura de software refere-se ao grande tempo deprendido na antecipação de problemas relacionados à arquitetura, enquanto os métodos ágeis procuram ser adaptativos, tomando decisões conforme a percepção de mudança de requisitos. 
+
+Na literatura, vários estudos apontam problemas relacionados a evolução do projeto de software e dificuldades com a arquitetura. \cite{waterman2015much} aponta que negligências de atividades de arquitetura podem acontecer dependendo dos valores buscados na entrega e que podem ser diretamente influenciados pelo tempo e orçamento do projeto. \cite{martini2015investigating} e \cite{bellomo2013study} afirmam que as limitações de tempo e orçamento podem resultar na tomada de decisões rápidas visando a entrega de funcionalidades, o que afeta diretamente o tempo dedicado ao planejamento e desenvolvimento de uma arquitetura adequada.
+
+Segundo \cite{babar2013agile} dentro da própria comunidade de pessoas envolvidas em processos de desenvolvimento e design de softwares existem opiniões rigorosamente definidas à respeito da incompatibilidade entre a agilidade e arquitetura. Neste contexto é necessário refletir sobre as seguintes perguntas: 
+\begin{itemize}
+    \item Quanto de arquitetura eu devo desenvolver \textit{versus} quanto eu devo flexibilizar durante o projeto? 
+    \item Como e quando eu devo refatorar projetos? 
+    \item Quanto de arquitetura eu devo formalizar em documentos? 
+    \item Devo revisar minha arquitetura? Se sim, quando?
+\end{itemize}
+
+Um arquiteto de software que projeta uma arquitetura de sistema com datas reais de entrega e prazos curtos irá tomar um determinado conjunto de decisões porém, o mesmo arquiteto ao projetar um sistema similar onde as datas de entrega e prazos podem ser facilmente atendidas, certamente tomará decisões diferentes. Da mesma maneira criar um design de arquitetura com os mesmos requisitos de hardware, recursos e interfaces atuais não tem o mesmo impacto que desenvolver uma arquitetura para um sistema que será entregue e executada daqui a 5 anos \cite{bass2007software}.
 
 \section{Práticas que permitem melhorar a arquitetura nos métodos ágeis}
 
-Em \cite{babar2013agile}, Michael Stal (co-autor do livro) enfatiza a importância da refatoração sistemática do software na prevenção da erosão de arquitetura (situação decorrente da mudança de requisitos do sistema sem a evolução da arquitetura). De acordo com o autor, a refatoração sistemática da arquitetura  permite que o arquiteto de software previna a erosão através da avaliação do software existente antes da inclusão de novos componentes ou alteração dos componentes existentes. Também é recomendada uma abordagem de refatoração de arquitetura adaptável ao método ágil que consiste na identificação do problema, aplicação das técnicas adequadas de refatoração e testes da arquitetura resultante após as alterações desta maneira, a refatoração de arquitetura de software também é combinada com atividades de refatoração de código para a melhor agregação de valor, oferecendo melhores opções para os arquitetos de software na tomada de decisões. Nesta mesma publicação, John Grundy revela que diversos aspectos da arquitetura podem ser explorados utilizando \textit{spikes} (pequenos programas desenvolvidos no intuito de examinar uma possível solução para um requisito) facilitando o processo de refatoração.
+Em \cite{babar2013agile} é enfatizada a importância da refatoração sistemática do software na prevenção da erosão de arquitetura situação decorrente da mudança de requisitos do sistema sem a evolução da arquitetura. De acordo com o autor, a refatoração sistemática da arquitetura  permite que o arquiteto de software previna a erosão através da avaliação do software existente antes da inclusão de novos componentes ou alteração dos componentes existentes. Também é recomendada uma abordagem de refatoração de arquitetura adaptável ao método ágil que consiste na identificação do problema, aplicação das técnicas adequadas de refatoração e testes da arquitetura resultante após as alterações desta maneira, a refatoração de arquitetura de software também é combinada com atividades de refatoração de código para a melhor agregação de valor, oferecendo melhores opções para os arquitetos de software na tomada de decisões. Nesta mesma publicação, são revelados diversos aspectos da arquitetura podem ser explorados utilizando \textit{spikes} (pequenos programas desenvolvidos no intuito de examinar uma possível solução para um requisito) facilitando o processo de refatoração. A diferença entre refatoração de código e refatoração de arquitetura é apresentada na seção \ref{ssec:codvsarq}.
 
 Para o efetivo funcionamento da arquitetura de software em conjunto dos métodos ágeis é importante realizar o trabalho arquitetural de maneira clara e sólida explicitando os objetivos das atividades à serem realizadas. O problema com a maioria das definições de requisitos à serem atendidos é a sua própria definição, sendo os autores de \cite{babar2013agile} apresentam três perguntas que ao serem respondidas são fundamentais nesta etapa:
 
@@ -214,18 +221,18 @@ Segundo \cite{babar2013agile} arquitetos de software podem reconhecer a necessid
     \begin{itemize}
         \item Código duplicado
         \item Métodos com muitas de linhas.
-        \item Uso de switchs em excesso.
+        \item Uso de \textit{switchs} em excesso (usado para substituir varias condições no código).
     \end{itemize}
 
-Além das características detalhadas de código que caracterízam as chamadas \textit{architecture smells} (termo utilizado para a presença de "cheiros ruins" na arquitetura, onde há a necessidade de aplicar refatorações para resolver possíveis problemas) ainda existem outros artefatos que podem ser identificados na arquitetura em si que podem caracterizar a necessidade de refatoração.
+Além das características detalhadas de código que caracterízam as chamadas \textit{architecture smells} (termo utilizado para a presença de "cheiros ruins" na arquitetura, onde há a necessidade de aplicar refatorações para resolver possíveis problemas) ainda existem outros artefatos que podem ser identificados na arquitetura em si que podem caracterizar a necessidade de refatoração, discutidos à seguir.
 
 \begin{description}
 
 \item[Artefatos duplicados:] Há uma dificuldade em definir quanta replicação é aceitável ou benéfica, e que tipo de repetições de código são consideradas problemas de arquitetura. Não há uma resposta concreta para isso, depende do contexto onde o principio DRY \textit{(Don't Repeat Yourself)} deve ou não ser aplicado.
 
-\item[Papeis indefinidos:] O nomes dos componentes devem explicar as responsabilidades para que os envolvidos no projeto entendam facilmente. As responsabilidades devem ser designados para componentes individuais e não sobre múltiplos componentes. Da mesma maneira um componente deve ter apenas uma responsabilidade e deve faze-la bem.
+\item[Papeis indefinidos:] O nomes dos componentes devem explicar as responsabilidades para que os envolvidos no projeto entendam facilmente. As responsabilidades devem ser designados para componentes individuais e não sobre múltiplos componentes. Da mesma maneira um componente deve ter apenas uma responsabilidade e deve fazê-la da maneira correta.
 
-\item[Arquitetura muito complexa:] Complexidades acidentais levam abstrações desnecessárias. Essas abstrações levam a softwares inexpressivos, Como componentes supérfluos ou dependências. Arquitetura deve ser simplista da melhor maneira possível.
+\item[Arquitetura muito complexa:] Complexidades acidentais levam abstrações desnecessárias. Essas abstrações levam a softwares muito generalizados, com componentes supérfluos ou dependências. Arquitetura deve ser simplista da melhor maneira possível.
 
 \item[Tudo centralizado:] É necessário evitar ao máximo dentro do sistema, arquiteturas \textit{hub} devem ser evitadas pois podem acabar sintetizando tudo em um único ponto de falha.
 
@@ -259,27 +266,33 @@ A refatoração contínua \cite{beck2000extreme} foca na resolução de problema
 
 
 \subsection{Principais obstáculos na refatoração de arquitetura}
-\begin{description}
-\item[Organização e gestão:] 
-Os stakeholders do projeto consideram as novas funcionalidades como sendo as mais importantes.
+% \begin{description}
+
+À seguir são apresentados os principais obstáculos na refatoração de arquitetura:
+
+\begin{itemize}
+
+\item[Organização e gestão:] Os \textit{stakeholders} do projeto consideram as novas funcionalidades como sendo as mais importantes.
 A premissa de que “a arquitetura de software deve ser feita corretamente no primeiro momento para que não haja problemas futuramente” ignora o fato de que existem constantes mudanças na arquitetura inclusive no momento da criação de novas funcionalidades.
 Primeiramente, os engenheiros de software não conhecem todos os requerimentos (pelo menos não com todos os detalhes). 
 Além disso o design de todo o processo não funciona. O que torna crescimento passo à passo do sistema como a melhor alternativa porém, o crescimento passo à passo requer uma constante avaliação de qualidade de todos os artefatos de design que também precisam de refatoração de arquitetura. Um problema comum é que a refatoração de arquitetura apenas pode provar seu valor após a conclusão do projeto podendo assim não haver nenhum retorno do investimento à curto prazo porem, é comprovado que a negligência de padrões de qualidade é muito mais custosa do que a inserção de verificações de qualidade periódicas. De acordo com a lei de Conway, a organização dita a arquitetura portanto, uma má organização leva à uma má arquitetura.
 
-\item[Processo de desenvolvimento:]
-O processo de refatoração precisa ser explicitamente integrado no processo de desenvolvimento geral. Do contrário, o gerenciamento do projeto não planejará recursos suficientes para os objetivos da refatoração,
+\item[Processo de desenvolvimento:] O processo de refatoração precisa ser explicitamente integrado no processo de desenvolvimento geral. Do contrário, o gerenciamento do projeto não planejará recursos suficientes para os objetivos da refatoração,
 os \textit{stakeholders} e testadores devem estar cientes da refatoração para que as mudanças possam ser validadas.
 
-\item[Tecnologia e ferramentas:]
-Devido à falta de ferramentas que suportem diretamente a engenharia de refatoração de arquitetura, o processo de ver feito manualmente mediante análise da estrutura atual e avaliação da reimplementação conforme a mudança do requisito de qualidade em questão.
+\item[Tecnologia e ferramentas:] Devido à falta de ferramentas que suportem diretamente a engenharia de refatoração de arquitetura, o processo de ver feito manualmente mediante análise da estrutura atual e avaliação da reimplementação conforme a mudança do requisito de qualidade em questão.
 
-\item[Aplicabilidade:]
-Se a erosão de design da arquitetura de software do projeto desenvolvido for grande ao ponto de que a refatoração resolverá apenas os sintomas e não as causas, e reengenharia ou até a reconstrução do projeto pode ser mais adequada e eficiente.
-\end{description}
+\item[Aplicabilidade:] Se a erosão de design da arquitetura de software do projeto desenvolvido for grande ao ponto de que a refatoração resolverá apenas os sintomas e não as causas, e reengenharia ou até a reconstrução do projeto pode ser mais adequada e eficiente.
+
+% \end{description}
+
+\end{itemize}
+
 
 Em \cite{babar2013agile} o processo de refatoração é considerado um auxiliador na grande maioria de problemas estruturais de sistemas onde também são apontados refatorações são viável contanto que o design em alto nível de abstração seja bom o suficiente para limitar a refatoração à situações de larga escala \cite{ihme2005agile}, \cite{kruchten2008situated} e \cite{boehm2002get}.
 
 \subsection{Refatoração versus refatoração de arquitetura}
+\label{ssec:codvsarq}
 
 Em \cite{thapparambil2005agile} o autor expressa que a "\textit{a refatoração é o método primário no desenvolvimento de arquitetura no mundo ágil}" porém é importante apresentar a diferença entre \textbf{refatoração de código} e \textbf{refatoração de arquitetura}.
 
