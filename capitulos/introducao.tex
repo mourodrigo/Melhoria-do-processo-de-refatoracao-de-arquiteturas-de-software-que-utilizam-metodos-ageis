@@ -1,46 +1,50 @@
 \chapter{Introdução}
 
+%TO-DO convencer que o trabalho é importante
+
+O ágil é apontado como um suporte para a rápida entrega de código desenvolvido e operacional através da estruturação do processo de desenvolvimento em iterações, onde cada iteração foca na entrega de código utilizável. Desde modo, apenas entregas de códigos realmente importam e as tarefas de analise e design além da documentação da arquitetura vem sendo praticamente eliminadas ou negligenciadas \cite{waterman2015much}, o que pode causar uma perda de documentação e históricos de mudanças e processos passados devido à própria falta de documentação, sendo este um fator primordial na criação e evolução de um sistema complexo.
+
+No estudo conduzido por \cite{waterman2015much} foram apontadas observações à respeito dos princípios do manifesto ágil, onde pode-se perceber uma série de fatores que podem impactar diretamente no processo de desenvolvimento de um software sob esta metodologia.
+
+O Scrum é um dos métodos mais utilizados para gerenciamento de projetos de software que utiliza iterações e incrementos no projeto realizando inspeções e adaptações na própria metodologia \cite{babar2013agile}. Dentro da própria metodologia ágil são utilizadas práticas como a refatoração de código e arquitetura buscando adaptar o produto desenvolvido conforme as necessidades apresentadas pelos envolvidos no projeto, entretanto, é possível concluir que o uso exclusivo da refatoração contínua não é suficiente para atender o nono princípio ágil "Contínua atenção à excelência técnica e bom design, aumenta a agilidade" \cite{beck2001manifesto}, e neste momento a arquitetura de software se faz necessária, expressando a importância do balanço entre as duas práticas.
+
+O próprio Manifesto Ágil \cite{manifestoagil} em seus princípios coloca a entrega de software funcional frente à elaboração de documentação do projeto, o que tem criado uma cultura eliminação total da utilização da documentação durante todo o ciclo de vida do software.
+
+Conforme \cite{bass2007software} afirmou, os requisitos de um sistema sofrem influência direta em seu design conforme os atributos de qualidade exigidos pelos \textit{stakeholders} sejam apresentados. Esta afirmação é confirmada em por outros autores complementam este posicionamento \cite{prause2012architectural}, relatando que os desenvolvedores podem não importar-se sobre a arquitetura ou ter pouca experiência no design da mesma, causando problemas na combinação de arquitetura e agilidade além de que a esta documentação pode ser custosa dentro do método ágil deviso à uma série de razões como tempo dedicado para o design detalhado durante as iterações, troca de informações relacionadas à arquitetura e o uso inapropriado de metáforas de design que pode resultar em um tempo e esforço adicional da equipe.
+
+A antecipação da arquitetura de software de sistemas pode trazer uma série de vantagens \cite{babar2013agile}. As tendências recentes na descrição da arquitetura de software como um conjunto de decisões de design com diagnóstico das próprias decisões tem destacado a importância da análise racional na realização e descrição das decisões de design tomadas. \cite{babar2009software} A composição do escopo de recursos e custo de um sistema ao projetar uma arquitetura baseada em um sistema existente pode facilitar em grande parte o processo devido à existência dos componentes chave que já podem ser facilmente antecipados e compreendidos \cite{babar2013agile}.
+
+Segundo \cite{abrahamsson2010agility} o distanciamento entre os métodos ágeis e a arquitetura de software refere-se ao grande tempo dependido na antecipação de problemas relacionados à arquitetura, enquanto os métodos ágeis procuram ser adaptativos, tomando decisões conforme a percepção de mudança de requisitos. 
+
+\cite{cockburn2006agile} afirma que a questão relacionada aos métodos ágeis e arquitetura de software não está na utilização ou não do conceito de arquitetura de software e sim em qual o tamanho do esforço deve ser investido na arquitetura, assumindo que este esforço pode ser de grande valor para o cliente.
+
 \section{Objetivos}
 
+\subsection{Objetivo geral:}
+
+% Apresentar uma proposta de melhoria de processo de refatoração de arquitetura em projetos de software que utilizam métodos ágeis, num contexto de pequena empresa de desenvolvimento. %teletar
+
+Apresentar uma proposta de melhoria do processo de evolução da arquitetura de software nos métodos ágeis através da integração com práticas de refatoração de arquitetura, num contexto de pequena empresa de desenvolvimento de software.
+
+\subsection{Objetivos específicos:}
+
+\begin{itemize}
+    % \item Apresentar uma proposta de abordagem para melhoria do processo de integração entre refatoração de arquitetura em projetos de software que utilizam métodos ágeis.
+    % \item Realizar uma pesquisação buscando identificar os aspectos positivos e negativos de uma prática de refatoração de arquitetura.
+    % \item Construir uma base de conhecimento sobre métodos, práticas e problemas relacionados à refatoração de arquitetura nos métodos ágeis. %teletar
+    \item Apresentar uma proposta de melhoria do processo integrando práticas de refatoração de arquitetura em projetos que utilizam métodos ágeis.
+    \item Realizar uma pesquisa-ação buscando avaliar os benefícios do processo de refatoração proposto, num contexto de pequena empresa.
+    \item Construir uma base de conhecimento sobre métodos, práticas e problemas relacionados à refatoração de arquitetura nos métodos ágeis, permitindo que outras empresas possam estudar os resultados alcançados e aplicar as práticas que se adequam a sua realidade. Para a construção da base de conhecimento serão utilizadas as informações coletadas durante a revisão da literatura, estudos de caso, avaliação com especialista e pesquisa-ação. As informações da base de conhecimento serão organizadas em formato \textit{wiki} para futura consulta.
+
+\end{itemize}
+
 \section{Justificativa}
+% constatar dificuldades no estudo de caso
+% na empresa atual sistema legado
 
-\section{Metodologia de trabalho}
+De acordo com \cite{kitchenham2004evidence} os papeis atuantes na gestão de desenvolvimento de software constantemente são questionados sobre qual a efetividade do investimento em determinadas tecnologias e o seu retorno após a implantação da mesma. A pesquisa-ação de tecnologias e técnicas permitem manter um nível razoável de segurança refinando estas técnicas em meios acadêmicos antes de disponibilizá-las à indústria \cite{dias2010developing}.
 
-A pesquisa consiste em propor um processo que auxilie na refatoração de arquitetura em projetos de software que utilizam métodos ágeis.
+O processo de refatoração precisa ser explicitamente integrado no processo de desenvolvimento geral. Do contrário, o gerenciamento do projeto não planejará recursos suficientes para os objetivos da refatoração, os \textit{stakeholders} e testadores devem estar cientes da refatoração para que as mudanças possam ser validadas.
 
-O plano de pesquisa a ser utilizado seguirá orientações de \cite{dias2010developing} através uma abordagem baseada em evidências, esta inclui as seguintes atividades principais:
-\begin{enumerate}[(a)]
+Através da apresentação da proposta e da pesquisa-ação à ser realizada, busca-se compreender a aplicação da refatoração de produtos de software com métodos ágeis aplicados pela indústria ligados aos objetivos de qualidade esperados. Neste contexto espera-se apresentar uma proposta de melhoria no processo de refatoração de arquiteturas de software auxiliando-as à atingir uma arquitetura de produto satisfatória em concordância com a flexibilidade proporcionada pelos métodos ágeis. 
 
-\item Identificar estudos preliminares: condução de revisão sistemática da literatura com a finalidade de identificar estudos relacionados a refatoração de arquitetura nos métodos ágeis, que tratem de métodos ou práticas utilizados e problemas vivenciados.
-
-\item Proposta da abordagem: proposta de uma abordagem para auxiliar na atividade de refatoração de arquiteturas nos métodos ágeis: definição de atividades a serem desenvolvidas, processo a ser seguido e recomendações de forma de adequação aos princípios ágeis. A proposta será construída baseada nas evidências.
-
-\item Validação da proposta com especialista: Considerando que a proposta apresenta tanto contribuições práticas quanto teórica, a validação da proposta será realizada com especialista da academia e profissionais da indústria. Como representantes da academia serão entrevistados 2 pesquisadores da área de Engenharia de Software e como representantes da indústria serão entrevistados 2 consultores sobre métodos ágeis. Para realização da validação será utilizada a técnica de grupos focados. O planejamento das reuniões, a condução das reuniões e forma de análise dos dados, seguirão as recomendações de \cite{ribeiro2003gruposfocados}.
-
-\item Validação da proposta através da aplicação em uma situação real: realização de uma pesquisa-ação numa empresa que apresenta o contexto de pesquisa estudado. Para realização da pesquisa-ação serão seguidas as recomendações de \cite{dos2008colaboraccao}. As métricas utilizadas para a validação durante o processo de pesquisa-ação serão levantadas com base no acompanhamento de \textit{sprints} realizadas pelo desenvolvimento da empresa, sendo considerados para este levantamento os seguintes relatórios:
-    
-   \begin{itemize}
-        \item Diagrama acumulativo de fluxo de tarefas.
-        \item Gráfico de controle para medição de estabilidade de métricas.
-        \item Gráfico de velocidade para histórias implementadas.
-        \item Gráfico burndown para apresentação de alterações de escopo não planejado.
-    \end{itemize}  
-    
-\end{enumerate}
-
-As validações à serem aplicadas utilizam métricas que já são monitoradas atualmente no ambiente de desenvolvimento da empresa em questão onde a pesquisa-ação será realizada, desta maneira será possível avaliar com maior embasamento o impacto que a aplicação da melhoria proposta tratá ao ambiente de desenvolvimento e consequentemente às métricas de acompanhamento. A figura \ref{fig:estrategia_pesquisa} apresenta a metodologia de pesquisa proposta, que inclui as seguintes atividades principais:
-\begin{figure}[ht]
-\centering
-\includegraphics[scale=0.90]{figuras/estrategia_pesquisa}
-\caption{ Estratégia de pesquisa}
-% \resizebox{!}{0.3cm}{}
-\label{fig:estrategia_pesquisa}
-\end{figure}
-
-
-
-% \subsection{Resultados esperados}
-
-% De acordo com \cite{kitchenham2004evidence} os papeis atuantes na gestão de desenvolvimento de software constantemente são questionados sobre qual a efetividade do investimento em determinadas tecnologias e o seu retorno após a implantação da mesma. A pesquisa-ação de tecnologias e técnicas permitem manter um nível razoável de segurança refinando estas técnicas em meios acadêmicos antes de disponibilizá-las à indústria \cite{dias2010developing}. 
-
-% Através da apresentação da proposta e da pesquisa-ação à ser realizada, busca-se compreender a aplicação da refatoração de produtos de software com métodos ágeis aplicados pela indústria ligados aos objetivos de qualidade esperados. Neste contexto espera-se apresentar uma proposta de melhoria no processo de refatoração de arquiteturas de software auxiliando-as à atingir uma arquitetura de produto satisfatória em concordância com a flexibilidade proporcionada pelos métodos ágeis. 
